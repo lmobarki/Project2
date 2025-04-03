@@ -162,3 +162,16 @@ body {
 .news-item.odd {
   background-color: #97d8e8;
 }
+.pb-image {
+  grid-column: 2; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.pb-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
