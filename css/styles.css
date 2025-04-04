@@ -120,11 +120,14 @@ body {
 }
 
 .setup-box img.setup-img {
-  width: 100%;
+  width: auto; 
   height: 100%;
   object-fit: contain;
   border-radius: 20px;
   padding: 10px;
+  display: block;            
+  margin-left: 0;             
+  margin-right: auto;         
 }
 
 .news-scroll {
