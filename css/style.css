@@ -131,3 +131,46 @@ footer h3 {
   height: 2px;
   background-color: #97d8e8;
 }
+
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 20px;
+}
+
+.slider-buttons button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.slider-buttons button:hover {
+  background-color: rgba(255, 215, 0, 0.8);
+}
+
