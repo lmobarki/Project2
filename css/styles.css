@@ -13,9 +13,6 @@ body {
   min-height: 100vh;
   padding: 20px;
   flex-direction: column;
-  font-family: 'Orbitron', sans-serif;
-}
-
 }
 
 /*golden frame */
@@ -194,3 +191,60 @@ body {
   border-radius: 20px;
 }
 
+@media (min-width: 900px) {
+.gold-frame {
+  padding: 30px;
+}
+
+.container {
+  padding: 40px;
+}
+
+.nav {
+  gap: 50px;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.content-area {
+  padding: 30px;
+}
+
+.news-scroll {
+  max-height: 400px;
+}
+}
+
+@media (max-width: 400px) {
+.nav a {
+  font-size: 14px;
+  gap: 15px;
+}
+
+.title {
+  font-size: 22px;
+}
+
+.content-area p {
+  font-size: 14px;
+}
+
+.bottom-section {
+  grid-template-columns: 1fr;
+}
+
+.pb-image {
+  padding: 10px 0;
+}
+
+.setup-box,
+.news-box {
+  height: auto;
+}
+
+.news-scroll {
+  max-height: 200px;
+}
+}
