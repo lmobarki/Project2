@@ -166,7 +166,7 @@ body {
 /* **Responsive Design: min-width media queries for larger screens */
 @media (min-width: 768px) {
     .gold-frame, .container {
-        width: 90%;
+        width: 100%;
     }
 
     h1 {
@@ -181,7 +181,7 @@ body {
 
 @media (min-width: 1024px) {
     .gold-frame, .container {
-        width: 80%;
+        width: 100%;
     }
 
     h1 {
@@ -189,7 +189,7 @@ body {
     }
 
     table {
-        width: 90%;
+        width: 100%;
     }
 
     th, td {
