@@ -159,5 +159,46 @@ footer h3 {
   display: block; /* Show active image */
   z-index: 1;
 }
+body {
+    font-size: 16px;
+}
 
+/* **Responsive Design: min-width media queries for larger screens */
+@media (min-width: 768px) {
+    .gold-frame, .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .gold-frame, .container {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    th, td {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .nav {
+        gap: 40px;
+    }
+}
 
