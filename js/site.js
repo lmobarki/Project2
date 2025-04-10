@@ -9,6 +9,7 @@ function showSlide(index) {
       slide.classList.add('active');
     }
   });
+  console.log("Showing slide: " + index); 
 }
 
 function nextSlide() {
@@ -16,4 +17,5 @@ function nextSlide() {
   showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 3000); 
+// Start the slide show
+setInterval(nextSlide, 3000); // Auto slide every 3 seconds
