@@ -134,43 +134,24 @@ footer h3 {
 
 .slider {
   position: relative;
+  width: 100%;
   max-width: 800px;
-  margin: 20px auto;
+  height: 400px;
+  margin: 0 auto 40px auto;
   overflow: hidden;
   border-radius: 20px;
 }
 
-.slide {
-  display: none;
-  width: 100%;
-  border-radius: 20px;
-}
-
-.slide.active {
-  display: block;
-}
-
-.slider-buttons {
+.slider img {
   position: absolute;
-  top: 50%;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  padding: 0 20px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-.slider-buttons button {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  font-size: 24px;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 10px;
+.slider img.active {
+  opacity: 1;
+  z-index: 1;
 }
-
-.slider-buttons button:hover {
-  background-color: rgba(255, 215, 0, 0.8);
-}
-
