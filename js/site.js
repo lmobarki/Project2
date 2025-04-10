@@ -1,5 +1,6 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
@@ -11,13 +12,8 @@ function showSlide(index) {
 }
 
 function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
+  currentSlide = (currentSlide + 1) % totalSlides;
   showSlide(currentSlide);
 }
 
-function prevSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(currentSlide);
-}
-
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 3000); 
