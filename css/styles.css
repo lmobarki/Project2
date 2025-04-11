@@ -5,7 +5,7 @@
   font-family: 'Orbitron', sans-serif;
 }
 
-body{
+body {
   background-color: #97d8e8;
 }
 
@@ -14,6 +14,7 @@ body{
   justify-content: center;
   gap: 30px;
   margin-bottom: 20px;
+}
 
 .nav a {
   color: #fff;
@@ -22,7 +23,7 @@ body{
   font-weight: bold;
   text-transform: uppercase;
   padding: 5px 0;
-  posiiton: relative;
+  position: relative; 
 }
 
 .nav a::after {
@@ -34,13 +35,13 @@ body{
   height: 2px;
   background-color: #97d8e8;
 }
-#content-area{
+
+.content-area {
   width: 85%;
   max-width: 550px;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
   padding: 25px;
   margin: 20px auto;
-}
-  
+} 
