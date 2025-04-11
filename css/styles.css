@@ -82,3 +82,13 @@ body {
   border-radius: 15px;
   box-sizing: border-box;
 }
+
+.content-area ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content-area li {
+  margin-bottom: 20px;
+}
