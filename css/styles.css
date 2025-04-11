@@ -44,4 +44,28 @@ body {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
   padding: 25px;
   margin: 20px auto;
-} 
+}
+
+.content-area input[type="text"]{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.content-area input[type="email"]{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.content-area input[type="url"]{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
