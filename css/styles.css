@@ -48,6 +48,7 @@ body {
 
 .content-area input[type="text"]{
   width: 100%;
+  background-color: #f8fb76;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 15px;
@@ -56,6 +57,7 @@ body {
 
 .content-area input[type="email"]{
   width: 100%;
+  background-color: #f8fb76;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 15px;
@@ -64,6 +66,7 @@ body {
 
 .content-area input[type="url"]{
   width: 100%;
+  background-color: #f8fb76;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 15px;
