@@ -119,4 +119,36 @@ body {
   transform: scale(1.05);
 }
 
+@media (min-width: 768px) {
+  .content-area {
+    width: 75%;
+    max-width: 600px;
+    padding: 30px;
+  }
+
+input[type="text"], 
+input[type="email"],
+input[type="url"],
+input[type="submit"] {
+  font-size: 16px;
+  padding: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-area{
+    width: 60%;
+    max-width: 700px;
+    padding: 40px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="submit"] {
+    font-size: 16px;
+    padding: 14px;
+  }
+}
+
   
