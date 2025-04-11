@@ -36,6 +36,14 @@ body {
   background-color: #97d8e8;
 }
 
+.info-text{
+  margin-bottom: 20px;
+}
+
+.note{
+  margin-bottom: 30px;
+}
+
 .content-area {
   width: 85%;
   max-width: 750px;
