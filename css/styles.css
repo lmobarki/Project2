@@ -248,3 +248,111 @@ body {
   max-height: 200px;
 }
 }
+
+/*styling the form page */
+.content-area input[type="text"],
+.content-area input[type="email"],
+.content-area input[type="url"] {
+  width: 100%;
+  background-color: #f8fb76;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+#submit {
+  display: block;
+  margin: 30px auto;
+  padding: 12px;
+  background-color: #0077cc;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#submit:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+/* Table page */
+h1.table {
+  font-size: 32px;
+  color: #FFD700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #FFD700;
+  border-radius: 20px;
+  overflow: hidden;
+}
+h2.table {
+color: #FFD700;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #FFD700;
+}
+
+th {
+  background-color: #FFD700;
+  color: #000;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #222;
+}
+
+tr:hover {
+  background-color: #FFD700;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+/* Footer */
+footer h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+/* Image slider */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto 40px auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slider img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: none;
+}
+
+.slider img.active {
+  opacity: 1;
+  display: block;
+  z-index: 1;
+}
