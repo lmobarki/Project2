@@ -25,15 +25,41 @@ const newsData = [
   }
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
-  const newsList = document.getElementById("newsList");
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
 
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (i === index) {
+      slide.classList.add('active');
+    }
+  });
+  console.log("Showing slide: " + index);
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  showSlide(currentSlide);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const newsList = document.getElementById("newsList");
   newsData.forEach((item) => {
     const li = document.createElement("li");
     li.className = "news-item";
     li.innerHTML = `<strong>${item.dateTime}</strong><br>${item.message}`;
     newsList.appendChild(li);
   });
+
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert("Thank You, Your PunkBuster License Inquiry has been submitted!");
+  });
+
+  setInterval(nextSlide, 3000);
 });
 
 
