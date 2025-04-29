@@ -217,7 +217,7 @@ body {
 }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 400px) {
 .nav a {
   font-size: 14px;
   gap: 15px;
