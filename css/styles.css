@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", "Special Gothic Expanded One", sans-serif;
 }
 
 body {
@@ -191,7 +191,7 @@ body {
   border-radius: 20px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
 .gold-frame {
   padding: 30px;
 }
@@ -217,35 +217,29 @@ body {
 }
 }
 
-@media (min-width: 400px) {
-.nav a {
-  font-size: 14px;
-  gap: 15px;
+@media (min-width: 1024px) {
+.gold-frame {
+  padding: 30px;
+}
+
+.container {
+  padding: 40px;
+}
+
+.nav {
+  gap: 50px;
 }
 
 .title {
-  font-size: 22px;
+  font-size: 36px;
 }
 
-.content-area p {
-  font-size: 14px;
-}
-
-.bottom-section {
-  grid-template-columns: 1fr;
-}
-
-.pb-image {
-  padding: 10px 0;
-}
-
-.setup-box,
-.news-box {
-  height: auto;
+.content-area {
+  padding: 30px;
 }
 
 .news-scroll {
-  max-height: 200px;
+  max-height: 400px;
 }
 }
 
